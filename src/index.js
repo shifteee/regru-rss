@@ -1,11 +1,18 @@
-import Vue from 'vue';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import VueRouter from 'vue-router'
 
-import App from './App.vue';
+import store from './store'
+import App from './App.vue'
 
-const app = new Vue({
-    render(h) {
-        return h(App);
-    },
-});
+import './assets/sass/_global.sass'
 
-app.$mount(document.querySelector('#app'));
+Vue.use(VueRouter)
+
+new Vue({
+	store,
+	mounted () {
+		this.$store.dispatch('getNewsList')
+	},
+	render: (h) => h(App),
+}).$mount('#app')
