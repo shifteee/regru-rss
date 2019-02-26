@@ -40,4 +40,6 @@
 			width: 100%
 			color: #fff
 			font: 600 16px Arial
+			&::placeholder
+				color: rgba(#fff,.5)
 </style>

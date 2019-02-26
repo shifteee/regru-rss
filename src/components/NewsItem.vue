@@ -54,7 +54,7 @@
 	.news-item
 		background: #515151
 		padding: 30px 30px 65px
-		width: calc(100% / 3 - 20px)
+		width: calc(100% / 3 - 21px)
 		margin: 0 10px 20px
 		position: relative
 		&__title
@@ -81,7 +81,7 @@
 				cursor: pointer
 
 		@media screen and (max-width: 1024px)
-			width: calc(100% / 2 - 20px)
+			width: calc(100% / 2 - 21px)
 			margin: 0 10px 20px
 		@media screen and (max-width: 480px)
 			width: 100%
