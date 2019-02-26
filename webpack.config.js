@@ -81,6 +81,7 @@ module.exports = {
             inject: false,
             mobile: true,
             appMountId: 'app',
+            title: 'REG.RU RSS'
         }),
         new webpack.DefinePlugin({
             'process.env': {

@@ -2,26 +2,21 @@
 	<div class="app-layout">
 
 		<AppHeader />
-
-		<Searchline v-model="newsSearchQuery"/>
-
-		<News :query="newsSearchQuery"/>
-
+		<Searchline />
+		
+		<router-view></router-view>
 
 	</div>
 </template>
 
 <script>
-	import AppHeader from './components/AppHeader.vue'
+	import AppHeader  from './components/AppHeader.vue'
 	import Searchline from './components/Searchline.vue'
-	import News from './components/News.vue'
 
 	export default {
-		components: { AppHeader, Searchline, News },
-		data () {
-			return {
-				newsSearchQuery: ''
-			}
+		components: { AppHeader, Searchline },
+		mounted () {
+			this.$store.dispatch('getNewsList') /* < Получаем список новостей */
 		}
 	}
 </script>

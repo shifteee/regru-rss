@@ -5,6 +5,7 @@
 </template>
 
 <script>
+	// Заготовка компонента
 	export default {
 		data () {
 			return {
