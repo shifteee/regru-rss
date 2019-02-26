@@ -32,6 +32,7 @@
 	.searchline
 		background: $blue
 		height: 50px
+		margin-bottom: 20px
 		&__container
 			height: 100%
 		&__input

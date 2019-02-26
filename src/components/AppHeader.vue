@@ -8,7 +8,7 @@
 				<a class="header__menu-link" @click="$router.push('/news')">Новости</a>
 			</li>
 			<li class="header__menu-item">
-				<a class="header__menu-link" href="#">About</a>
+				<a class="header__menu-link" @click="$router.push('/about')">Об этом</a>
 			</li>
 		</ul>
 	</div>

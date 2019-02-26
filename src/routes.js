@@ -3,6 +3,7 @@ import VueRouter    from 'vue-router'
 
 import News         from './components/News.vue'
 import NewsItemPage from './components/NewsItemPage.vue'
+import AboutPage from './components/AboutPage.vue'
 
 Vue.use(VueRouter)
 
@@ -24,5 +25,9 @@ export default new VueRouter({
 			path: '/news/:id',
 			component: NewsItemPage
 		},
+		{
+			path: '/about',
+			component: AboutPage
+		}
 	]
 })
